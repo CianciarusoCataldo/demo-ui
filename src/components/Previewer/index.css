@@ -1,0 +1,54 @@
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.previewer-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #282c34;
+  border-radius: 5px;
+}
+
+.previewer-container p {
+  color: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.preview-screen {
+  padding-top: 1rem;
+}
+
+.preview {
+  flex-direction: column;
+  padding-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.preview-tools {
+  flex-direction: row;
+  text-align: left;
+}
+
+.screenshot-button {
+  -webkit-appearance: none;
+  font-size: large;
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+}
+
+.screenshot-button:hover {
+  color: rgb(53, 98, 134);
+}
+
+.extra-settings {
+  display: inline-flex;
+}
