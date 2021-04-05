@@ -1,19 +1,17 @@
 {
-  "name": "demo-maker",
-  "version": "1.0.0",
+  "name": "@cataldocianciaruso/demo-maker",
+  "version": "1.0.1",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "keywords": [],
   "typings": "dist/index.d.ts",
-  "author": "CianciarusoCataldo",
+  "author": "Cataldo Cianciaruso",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
+  "repository": "git://github.com/CianciarusoCataldo/demo-maker.git",
   "devDependencies": {
     "@types/classnames": "^2.2.11",
     "@types/react": "^16.14.5",
@@ -37,7 +35,6 @@
     "check-types": "tsc",
     "dev": "npm-run-all --parallel build-watch start",
     "init": "npm i && cd playground && npm i",
-    "start": "cd playground && npm run start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cd playground && npm run start"
   }
 }
