@@ -1,6 +1,6 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "files": [
     "dist",
-    "config"
+    "config/rollup.build.config.js"
   ],
   "repository": "git://github.com/CianciarusoCataldo/demo-ui.git",
   "devDependencies": {
