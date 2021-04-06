@@ -1,10 +1,17 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
-  "keywords": [],
+  "keywords": [
+    "demo",
+    "ui",
+    "responsive",
+    "react",
+    "ui-lib",
+    "styleguidist"
+  ],
   "typings": "dist/index.d.ts",
   "author": "Cataldo Cianciaruso",
   "license": "MIT",
