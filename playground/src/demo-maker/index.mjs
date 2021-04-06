@@ -1,4 +1,4 @@
-/* eslint-disable */ import './styles/index.css';
+/* eslint-disable */ import './styles/index.css'
 import React from 'react';
 import html2canvas from 'html2canvas';
 import classnames from 'classnames';
