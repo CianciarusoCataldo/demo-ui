@@ -2,9 +2,10 @@ import React from "react";
 
 import "./index.css";
 
-import { BaseCallback, PropObject } from "../../logic/types";
+import { BaseCallback } from "../../logic/types";
+import { PropObject } from "../../prop-creators/types";
 
-import { formatValue, getProps, merge } from "../../logic/utils";
+import { formatValue, getProps, merge } from "../../logic";
 
 import Box from "../Box";
 import Previewer from "../Previewer";

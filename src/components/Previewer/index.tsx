@@ -3,9 +3,9 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../logic/types";
+import { PropObject } from "../../prop-creators/types";
 
-import { takeScreenshot } from "../../logic/utils";
+import { takeScreenshot } from "../../logic";
 
 import Box from "../Box";
 

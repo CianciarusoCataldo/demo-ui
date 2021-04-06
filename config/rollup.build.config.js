@@ -10,17 +10,6 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: "playground/src/demo-maker/index.mjs",
-        format: "esm",
-        banner: "/* eslint-disable */ import './styles/index.css'",
-      },
-      {
-        file: "playground/src/demo-maker/index.cjs",
-        format: "cjs",
-        banner: "import './styles/index.css'",
-        plugins: [terser()],
-      },
-      {
         file: pkg.main,
         format: "cjs",
         plugins: [terser()],
@@ -33,7 +22,7 @@ export default [
       },
     ],
     plugins: [
-      del({ targets: ["dist/*", "playground/src/demo-maker"] }),
+      del({ targets: ["dist/*","playground/src/demo-ui"] }),
       postcss({
         plugins: [],
         minimize: true,

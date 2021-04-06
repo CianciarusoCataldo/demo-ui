@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../logic/types";
+import { PropObject } from "../../prop-creators/types";
 
 interface Props {
   className?: string;

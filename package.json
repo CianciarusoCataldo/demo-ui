@@ -1,6 +1,6 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "2.0.4",
+  "version": "2.1.0",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -41,11 +41,11 @@
   },
   "scripts": {
     "build": "rollup -c ./config/rollup.build.config.js",
-    "analyze": "rollup --silent -c ./config/rollup.analyze.config.js",
+    "analyze": "rollup -c ./config/rollup.analyze.config.js",
     "build-watch": "rollup -c ./config/rollup.dev.config.js -w",
     "check-types": "tsc",
-    "dev": "npm-run-all --parallel build-watch start",
+    "start": "npm-run-all --parallel build-watch start-playground",
     "init": "npm i && cd playground && npm i",
-    "start": "cd playground && npm run start"
+    "start-playground": "cd playground && npm run start"
   }
 }

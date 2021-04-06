@@ -9,15 +9,15 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: "playground/src/demo-maker/index.mjs",
-        format: "esm",
-        banner: "/* eslint-disable */ import './styles/index.css';",
-      },
-      {
-        file: "playground/src/demo-maker/index.cjs",
+        file: "playground/src/demo-ui/index.cjs",
         format: "cjs",
         banner: "import './styles/index.css'",
         plugins: [terser()],
+      },
+      {
+        file: "playground/src/demo-ui/index.mjs",
+        format: "esm",
+        banner: "/* eslint-disable */ import './styles/index.css';",
       },
       {
         file: pkg.main,

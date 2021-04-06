@@ -8,11 +8,11 @@ export {
   SelectProp,
   StringProp,
   RangeProp,
-} from "./logic/prop-creators";
+} from "./prop-creators";
 export {
   formatValue,
   merge,
   getProps,
   takeScreenshot,
   downloadFile,
-} from "./logic/utils";
+} from "./logic";

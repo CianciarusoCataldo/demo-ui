@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -18,11 +18,11 @@
     /**
      * default directory for all components in workspace.
      **/
-    "defaultDirectory": "{scope}/{name}",
+    "defaultDirectory": "src",
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "cianciarusocataldo.demo-ui"
   },
   /**
    * main configuration for component dependency resolution.
@@ -53,7 +53,7 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      // "teambit.react/react": { }
+      "teambit.react/react": {}
     }
   }
 }
