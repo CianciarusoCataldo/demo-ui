@@ -1,6 +1,6 @@
 {
-  "short_name": "demo-maker playground",
-  "name": "A playground for demo-maker UI lib",
+  "short_name": "demo-ui playground",
+  "name": "A playground for demo-ui lib",
   "icons": [
     {
       "src": "favicon.ico",
