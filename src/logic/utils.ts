@@ -1,4 +1,4 @@
-import { Prop, PropType } from "./types";
+import { PropObject, PropType } from "./types";
 import html2canvas from "html2canvas";
 
 const FORMATTERS: Record<PropType, (value: any) => any> = {
@@ -22,7 +22,7 @@ export const merge = (
   return tmp;
 };
 
-export const getProps = (props: Record<string, Prop>) => {
+export const getProps = (props: Record<string, PropObject>) => {
   let tmp = {};
   Object.keys(props).forEach((prop) => (tmp[prop] = props[prop].value));
 
@@ -53,7 +53,7 @@ export const takeScreenshot = (
 
 export const downloadFile = (url: string) => {
   let downloadLink = document.createElement("a");
-  downloadLink.setAttribute("download", "CanvasAsImage.png");
+  downloadLink.setAttribute("download", "component_preview.png");
   downloadLink.setAttribute("href", url);
   downloadLink.click();
 };

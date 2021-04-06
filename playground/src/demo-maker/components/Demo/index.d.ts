@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.css";
-import { BaseCallback, Prop } from "../../logic/types";
+import { BaseCallback, PropObject } from "../../logic/types";
 interface Props {
     className?: string;
-    props?: Record<string, Prop>;
+    props?: Record<string, PropObject>;
     label?: string;
     renderFunction?: BaseCallback;
     screenshot?: boolean;

@@ -3,14 +3,16 @@ import classnames from "classnames";
 
 import "./index.css";
 
+import { PropObject } from "../../logic/types";
+
 import { takeScreenshot } from "../../logic/utils";
-import { Prop } from "../../logic/types";
+
 import Box from "../Box";
 
 interface Props {
   label?: string;
   borderContent?: JSX.Element;
-  customSettings?: Record<string, Prop & { onChange: (value: any) => void }>;
+  customSettings?: Record<string, PropObject & { onChange: (value: any) => void }>;
   children?: JSX.Element;
   screenshot?: boolean;
   className?: string;

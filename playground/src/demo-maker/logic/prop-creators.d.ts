@@ -1,4 +1,4 @@
-import { PropType, Prop as PropObject, BaseCallback } from "./types";
+import { PropType, PropObject, BaseCallback } from "./types";
 export declare const Prop: (type: PropType, value: any, values?: Record<string, any>, hide?: boolean, min?: number, max?: number, callback?: BaseCallback) => PropObject;
 export declare const HiddenProp: (value: any) => PropObject;
 export declare const StringProp: (value: string) => PropObject;

@@ -5,7 +5,7 @@ export type BaseCallback = (
 
 export type PropType = "text" | "checkbox" | "select" | "range" | "number";
 
-export interface Prop<T = any> {
+export interface PropObject<T = any> {
   type?: PropType;
   value?: T;
   values?: Record<string, T>;

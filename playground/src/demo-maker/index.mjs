@@ -1,37 +1,7 @@
-/* eslint-disable */
+/* eslint-disable */ import './styles/index.css';
 import React from 'react';
 import html2canvas from 'html2canvas';
 import classnames from 'classnames';
-
-function styleInject(css, ref) {
-  if ( ref === void 0 ) ref = {};
-  var insertAt = ref.insertAt;
-
-  if (!css || typeof document === 'undefined') { return; }
-
-  var head = document.head || document.getElementsByTagName('head')[0];
-  var style = document.createElement('style');
-  style.type = 'text/css';
-
-  if (insertAt === 'top') {
-    if (head.firstChild) {
-      head.insertBefore(style, head.firstChild);
-    } else {
-      head.appendChild(style);
-    }
-  } else {
-    head.appendChild(style);
-  }
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var css_248z$2 = ".demo-container{flex-direction:column}.demo-row{display:flex;justify-content:center;flex-direction:row;color:#fff;padding-bottom:1rem;margin-top:1rem;margin-bottom:1rem}.props-container{background-color:#fff;display:flex;flex-direction:column;text-align:left;margin-left:.6rem}.prop>.value{color:#000;font-size:large}.prop{display:flex;flex-direction:row;margin-bottom:.4rem}.prop>.name{color:#2f4f4f;font-size:large;margin-right:.3rem;margin-left:.7rem}@media (max-width:900px){.demo-row{flex-direction:column}}";
-styleInject(css_248z$2);
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -98,13 +68,10 @@ var takeScreenshot = function (element, background) {
 };
 var downloadFile = function (url) {
     var downloadLink = document.createElement("a");
-    downloadLink.setAttribute("download", "CanvasAsImage.png");
+    downloadLink.setAttribute("download", "component_preview.png");
     downloadLink.setAttribute("href", url);
     downloadLink.click();
 };
-
-var css_248z$1 = ".hidden{display:none}.demo-label{margin-top:1rem}.box{background-color:#423c5e;padding:.5rem;margin-top:10px;color:#ff976b;outline:none;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}.box,.box.range{border-radius:5px}.box.range{-webkit-appearance:none;height:15px;padding:0;opacity:.9;-webkit-transition:.2s;transition:opacity .2s}.box.range::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:25px;height:25px;border-radius:50%;background:#fd6e31;border:1px solid #ff4d00;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);cursor:pointer}.box.range::-moz-range-thumb{width:25px;height:25px;border-radius:50%;background:#fd6e31;border:1px solid #ff4d00;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);cursor:pointer}.box.select{color:#fff;padding-right:.5rem}.box-container{flex-direction:column;margin:1rem}.box.checkbox{border:1px solid #000;height:25px;width:25px}.box.checkbox:checked{-webkit-transition:all .2s;transition:all .2s}";
-styleInject(css_248z$1);
 
 var Box = function (_a) {
     var className = _a.className, _b = _a.label, label = _b === void 0 ? "" : _b, children = _a.children, _c = _a.type, type = _c === void 0 ? "text" : _c; _a.callBack; var value = _a.value, _d = _a.values, values = _d === void 0 ? {} : _d, _e = _a.hide, hide = _e === void 0 ? false : _e, min = _a.min, max = _a.max, id = _a.id, _f = _a.onChange, onChange = _f === void 0 ? function () { } : _f;
@@ -118,9 +85,6 @@ var Box = function (_a) {
             } }, Object.keys(values).map(function (element) { return (React.createElement("option", { key: element, value: element }, element)); }))) : (React.createElement("input", { checked: value, className: classnames("box", type), type: type, value: value, onChange: function (e) { return onChange(e.target.value); }, min: min, max: max }))),
         children));
 };
-
-var css_248z = ".my-1{margin-top:1rem;margin-bottom:1rem}.mx-1{margin-left:1rem;margin-right:1rem}.previewer-container{display:flex;flex-direction:column;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);background-color:#282c34;border-radius:5px}.previewer-container p{color:#fff;padding-left:1rem;padding-right:1rem}.preview-screen{padding-top:1rem}.preview{flex-direction:column;padding-bottom:1rem;border-radius:3px}.preview-tools{flex-direction:row;text-align:left}.screenshot-button{-webkit-appearance:none;font-size:large;background-color:transparent;border:0;outline:none}.screenshot-button:hover{color:#356286}.extra-settings{display:inline-flex}";
-styleInject(css_248z);
 
 var Previewer = function (_a) {
     var className = _a.className, borderContent = _a.borderContent, label = _a.label, children = _a.children, customSettings = _a.customSettings, screenshot = _a.screenshot;
@@ -158,7 +122,7 @@ var Demo = function (_a) {
             return (React.createElement("div", { key: prop },
                 React.createElement(Box, { id: prop, label: prop, hide: inputProps[prop].hide, type: inputProps[prop].type, value: props[prop], onChange: function (value) {
                         var _a;
-                        setProps(merge(props, (_a = {},
+                        return setProps(merge(props, (_a = {},
                             _a[prop] = formatValue(value, inputProps[prop].type),
                             _a)));
                     }, values: inputProps[prop].values })));
@@ -168,11 +132,13 @@ var Demo = function (_a) {
                 return setProps(merge(props, newProps));
             })),
             React.createElement("div", { key: "demo_children" }, children),
-            settings.debug && showProps && (React.createElement("div", { key: "props-container", className: "props-container" }, "{",
+            settings.debug && showProps && (React.createElement("div", { key: "props-container", className: "props-container" },
+                "{",
                 Object.keys(props).map(function (prop) { return (React.createElement("div", { className: "prop", key: prop },
                     React.createElement("label", { className: "name" }, prop + " : "),
                     React.createElement("label", { className: "value" }, "" + props[prop]),
-                    ",")); }), "}")))));
+                    ",")); }),
+                "}")))));
 };
 
 var Prop = function (type, value, values, hide, min, max, callback) {

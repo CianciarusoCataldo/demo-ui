@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { Prop } from "../../logic/types";
+import { PropObject } from "../../logic/types";
 interface Props {
     className?: string;
     label?: string;
@@ -8,5 +8,5 @@ interface Props {
     id?: string;
     children?: JSX.Element;
 }
-declare const Box: React.FunctionComponent<Prop & Props>;
+declare const Box: React.FunctionComponent<PropObject & Props>;
 export default Box;

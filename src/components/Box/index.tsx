@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { Prop } from "../../logic/types";
+import { PropObject } from "../../logic/types";
 
 interface Props {
   className?: string;
@@ -13,7 +13,7 @@ interface Props {
   children?: JSX.Element;
 }
 
-const Box: React.FunctionComponent<Prop & Props> = ({
+const Box: React.FunctionComponent<PropObject & Props> = ({
   className,
   label = "",
   children,

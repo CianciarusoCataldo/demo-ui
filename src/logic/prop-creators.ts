@@ -1,4 +1,4 @@
-import { PropType, Prop as PropObject, BaseCallback } from "./types";
+import { PropType, PropObject, BaseCallback } from "./types";
 
 export const Prop = (
   type: PropType,

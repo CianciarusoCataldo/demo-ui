@@ -1,10 +1,10 @@
 import React from "react";
 import "./index.css";
-import { Prop } from "../../logic/types";
+import { PropObject } from "../../logic/types";
 interface Props {
     label?: string;
     borderContent?: JSX.Element;
-    customSettings?: Record<string, Prop & {
+    customSettings?: Record<string, PropObject & {
         onChange: (value: any) => void;
     }>;
     children?: JSX.Element;

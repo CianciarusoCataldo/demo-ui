@@ -2,17 +2,16 @@ import React from "react";
 
 import "./index.css";
 
-import { BaseCallback, Prop } from "../../logic/types";
+import { BaseCallback, PropObject } from "../../logic/types";
 
 import { formatValue, getProps, merge } from "../../logic/utils";
 
 import Box from "../Box";
 import Previewer from "../Previewer";
 
-
 interface Props {
   className?: string;
-  props?: Record<string, Prop>;
+  props?: Record<string, PropObject>;
   label?: string;
   renderFunction?: BaseCallback;
   screenshot?: boolean;
@@ -63,13 +62,13 @@ const Demo: React.FunctionComponent<Props> = ({
                       hide={inputProps[prop].hide}
                       type={inputProps[prop].type}
                       value={props[prop]}
-                      onChange={(value) => {
+                      onChange={(value) =>
                         setProps(
                           merge(props, {
                             [prop]: formatValue(value, inputProps[prop].type),
                           })
-                        );
-                      }}
+                        )
+                      }
                       values={inputProps[prop].values}
                     />
                   </div>
@@ -89,14 +88,14 @@ const Demo: React.FunctionComponent<Props> = ({
         <div key="demo_children">{children}</div>
         {settings.debug && showProps && (
           <div key="props-container" className="props-container">
-            {`{`}
+            {"{"}
             {Object.keys(props).map((prop) => (
               <div className="prop" key={prop}>
                 <label className="name">{`${prop} : `}</label>
                 <label className="value">{`${props[prop]}`}</label>,
               </div>
             ))}
-            {`}`}
+            {"}"}
           </div>
         )}
       </div>

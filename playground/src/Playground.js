@@ -14,7 +14,7 @@ const App = () => {
   return (
     <div className="playground">
       <header className="playground-header">
-        <p>Demo-maker playground</p>
+        <p>Demo-ui playground</p>
       </header>
       <div>
         <p className="component-label">Previewer</p>
