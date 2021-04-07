@@ -1,3 +1,5 @@
+/* Prop-creators types */
+
 export type PropType = "text" | "checkbox" | "select" | "range" | "number";
 
 export interface PropObject<T = any> {
@@ -9,3 +11,10 @@ export interface PropObject<T = any> {
   min?: number;
   max?: number;
 }
+
+/* Logic types */
+
+export type BaseCallback = (
+  props: Record<string, any>,
+  setProps: (newProps: Record<string, any>) => void
+) => JSX.Element;

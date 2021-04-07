@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../prop-creators/types";
+import { PropObject } from "@bit/cianciarusocataldo.demo-ui.types";
 
 interface Props {
   className?: string;

@@ -19,6 +19,19 @@
     "dist",
     "config/rollup.build.config.js"
   ],
+  "bit": {
+    "overrides": {
+      "src/logic": {
+        "dependencies": {
+          "@bit/cianciarusocataldo.demo-ui.types": "npm:@bit/cianciarusocataldo.demo-ui.types@^1.0.0",
+          "classnames": "^2.2.6",
+          "html2canvas": "*",
+          "react": "^16.13.1",
+          "react-dom": "^16.9.12"
+        }
+      }
+    }
+  },
   "repository": "git://github.com/CianciarusoCataldo/demo-ui.git",
   "devDependencies": {
     "@types/classnames": "^2.2.11",
@@ -33,12 +46,6 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.2.3"
   },
-  "peerDependencies": {
-    "classnames": "^2.2.6",
-    "html2canvas": "*",
-    "react": "^16.14.0",
-    "react-dom": "^16.9.12"
-  },
   "scripts": {
     "build": "rollup -c ./config/rollup.build.config.js",
     "analyze": "rollup -c ./config/rollup.analyze.config.js",
@@ -47,5 +54,15 @@
     "start": "npm-run-all --parallel build-watch start-playground",
     "init": "npm i && cd playground && npm i",
     "start-playground": "cd playground && npm run start"
+  },
+  "dependencies": {
+    "@bit/cianciarusocataldo.demo-ui.box": "npm:@bit/cianciarusocataldo.demo-ui.box@^1.0.1",
+    "@bit/cianciarusocataldo.demo-ui.logic": "npm:@bit/cianciarusocataldo.demo-ui.logic@^1.0.1",
+    "@bit/cianciarusocataldo.demo-ui.previewer": "npm:@bit/cianciarusocataldo.demo-ui.previewer@^1.0.0",
+    "@bit/cianciarusocataldo.demo-ui.types": "npm:@bit/cianciarusocataldo.demo-ui.types@^1.0.0",
+    "classnames": "^2.2.6",
+    "html2canvas": "*",
+    "react": "^16.13.1",
+    "react-dom": "^16.9.12"
   }
 }

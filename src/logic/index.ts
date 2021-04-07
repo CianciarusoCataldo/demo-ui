@@ -1,5 +1,6 @@
-import { PropObject, PropType } from "../prop-creators/types";
 import html2canvas from "html2canvas";
+
+import { PropObject, PropType } from "@bit/cianciarusocataldo.demo-ui.types";
 
 const FORMATTERS: Record<PropType, (value: any) => any> = {
   checkbox: (value: boolean): boolean => !(String(value) === "true"),

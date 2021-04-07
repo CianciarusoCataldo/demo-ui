@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/ {
+ **/{
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -33,12 +33,16 @@
      */
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
-      "dependencies": {},
-      "peerDependencies": {
-        "react": "16.13.1",
-        "react-dom": "16.13.1"
-      }
-    }
+      "dependencies": {
+        "@cianciarusocataldo/demo-ui.previewer": "1.0.0"
+      },
+      "peerDependencies": {}
+    },
+    "packageManagerArgs": [],
+    "devFilePatterns": [
+      "**/*.spec.ts"
+    ],
+    "strictPeerDependencies": false
   },
   /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.

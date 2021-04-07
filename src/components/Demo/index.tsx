@@ -2,13 +2,12 @@ import React from "react";
 
 import "./index.css";
 
-import { BaseCallback } from "../../logic/types";
-import { PropObject } from "../../prop-creators/types";
+import { BaseCallback, PropObject } from "@bit/cianciarusocataldo.demo-ui.types";
 
-import { formatValue, getProps, merge } from "../../logic";
+import { formatValue, getProps, merge } from "@bit/cianciarusocataldo.demo-ui.logic";
 
-import Box from "../Box";
-import Previewer from "../Previewer";
+import Box from "@bit/cianciarusocataldo.demo-ui.box";
+import Previewer from "@bit/cianciarusocataldo.demo-ui.previewer";
 
 interface Props {
   className?: string;

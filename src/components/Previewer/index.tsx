@@ -3,11 +3,11 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../prop-creators/types";
+import { PropObject } from "@bit/cianciarusocataldo.demo-ui.types";
 
-import { takeScreenshot } from "../../logic";
+import { takeScreenshot } from "@bit/cianciarusocataldo.demo-ui.logic";
 
-import Box from "../Box";
+import Box from "@bit/cianciarusocataldo.demo-ui.box";
 
 interface Props {
   label?: string;
