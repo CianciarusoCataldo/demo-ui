@@ -9,13 +9,13 @@ export default [
     input: "src/index.ts",
     output: [
       {
-        file: "playground/src/demo-ui/index.cjs",
+        file: "playground/src/demo-ui-preview/index.cjs",
         format: "cjs",
         banner: "import './styles/index.css'",
         plugins: [terser()],
       },
       {
-        file: "playground/src/demo-ui/index.mjs",
+        file: "playground/src/demo-ui-preview/index.mjs",
         format: "esm",
         banner: "/* eslint-disable */ import './styles/index.css';",
       },
