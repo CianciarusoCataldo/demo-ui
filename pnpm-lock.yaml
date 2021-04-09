@@ -6,12 +6,10 @@ importers:
       '@bit/cianciarusocataldo.demo-ui.logic': link:src/logic
       '@bit/cianciarusocataldo.demo-ui.previewer': link:src/components/Previewer
       '@bit/cianciarusocataldo.demo-ui.types': link:src/types
-      '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.12
       classnames: registry.npmjs.org/classnames/2.3.1
       html2canvas: registry.npmjs.org/html2canvas/1.0.0-rc.7
       npm-run-all: registry.npmjs.org/npm-run-all/4.1.5
       react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
       rollup: registry.npmjs.org/rollup/2.44.0
       rollup-plugin-analyzer: registry.npmjs.org/rollup-plugin-analyzer/4.0.0
       rollup-plugin-delete: registry.npmjs.org/rollup-plugin-delete/2.0.0
@@ -32,12 +30,10 @@ importers:
       '@types/classnames': ^2.2.11
       '@types/jest': 26.0.20
       '@types/react': ^16.14.5
-      '@types/react-dom': ^16.9.12
       classnames: ^2.3.1
       html2canvas: '*'
       npm-run-all: ^4.1.5
       react: 16.14.0
-      react-dom: 16.14.0
       rollup: ^2.44.0
       rollup-plugin-analyzer: ^4.0.0
       rollup-plugin-delete: ^2.0.0
@@ -240,6 +236,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/parse-json/-/parse-json-4.0.0.tgz
     version: 4.0.0
   registry.npmjs.org/@types/prop-types/15.7.3:
+    dev: true
     name: '@types/prop-types'
     resolution:
       integrity: sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
@@ -254,21 +251,12 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/q/-/q-1.5.4.tgz
     version: 1.5.4
-  registry.npmjs.org/@types/react-dom/16.9.12:
-    dependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.14.5
-    dev: false
-    name: '@types/react-dom'
-    resolution:
-      integrity: sha512-i7NPZZpPte3jtVOoW+eLB7G/jsX5OM6GqQnH+lC0nq0rqwlK0x8WcMEvYDgFWqWhWMlTltTimzdMax6wYfZssA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.12.tgz
-    version: 16.9.12
   registry.npmjs.org/@types/react/16.14.5:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
       '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
       csstype: registry.npmjs.org/csstype/3.0.7
+    dev: true
     name: '@types/react'
     resolution:
       integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
@@ -276,6 +264,7 @@ packages:
       tarball: https://registry.npmjs.org/@types/react/-/react-16.14.5.tgz
     version: 16.14.5
   registry.npmjs.org/@types/scheduler/0.16.1:
+    dev: true
     name: '@types/scheduler'
     resolution:
       integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
@@ -947,6 +936,7 @@ packages:
       tarball: https://registry.npmjs.org/csso/-/csso-4.2.0.tgz
     version: 4.2.0
   registry.npmjs.org/csstype/3.0.7:
+    dev: true
     name: csstype
     resolution:
       integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
@@ -3073,23 +3063,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz
     version: 2.1.0
-  registry.npmjs.org/react-dom/16.14.0_react@16.14.0:
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-      object-assign: registry.npmjs.org/object-assign/4.1.1
-      prop-types: registry.npmjs.org/prop-types/15.7.2
-      react: registry.npmjs.org/react/16.14.0
-      scheduler: registry.npmjs.org/scheduler/0.19.1
-    dev: false
-    id: registry.npmjs.org/react-dom/16.14.0
-    name: react-dom
-    peerDependencies:
-      react: ^16.14.0
-    resolution:
-      integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz
-    version: 16.14.0
   registry.npmjs.org/react-is/16.13.1:
     dev: false
     name: react-is
@@ -3355,17 +3328,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/sax/-/sax-1.2.4.tgz
     version: 1.2.4
-  registry.npmjs.org/scheduler/0.19.1:
-    dependencies:
-      loose-envify: registry.npmjs.org/loose-envify/1.4.0
-      object-assign: registry.npmjs.org/object-assign/4.1.1
-    dev: false
-    name: scheduler
-    resolution:
-      integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz
-    version: 0.19.1
   registry.npmjs.org/semver/5.7.1:
     dev: false
     hasBin: true

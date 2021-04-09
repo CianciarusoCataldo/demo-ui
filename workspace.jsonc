@@ -29,10 +29,6 @@
           "react": {
             "version": "16.14.0",
             "preserve": true
-          },
-          "react-dom": {
-            "version": "16.14.0",
-            "preserve": true
           }
         }
       }
@@ -51,10 +47,6 @@
         //     "version": "16.14.0",
         //     "preserve": true
         //   },
-        //   "react-dom": {
-        //     "version": "16.14.0",
-        //     "preserve": true
-        //   }
         // },
         "devDependencies": { "typescript": "4.2.3" }
       },
@@ -72,9 +64,6 @@
     //     "teambit.react/react": {
     //       "version": "16.14.0"
     //     },
-    //     "teambit.react/react-dom": {
-    //       "version": "16.14.0"
-    //     }
     //   }
     // }
   }
