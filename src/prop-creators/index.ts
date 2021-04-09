@@ -1,5 +1,4 @@
-import { BaseCallback } from "../logic/types";
-import { PropType, PropObject } from "./types";
+import { BaseCallback, PropType, PropObject } from "../types";
 
 export const Prop = (
   type: PropType,

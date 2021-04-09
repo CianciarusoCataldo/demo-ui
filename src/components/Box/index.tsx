@@ -3,17 +3,9 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../prop-creators/types";
+import { BoxProps } from "../../types";
 
-interface Props {
-  className?: string;
-  label?: string;
-  onChange?: (value: any) => void;
-  id?: string;
-  children?: JSX.Element;
-}
-
-const Box: React.FunctionComponent<PropObject & Props> = ({
+const Box: React.FunctionComponent<BoxProps> = ({
   className,
   label = "",
   children,

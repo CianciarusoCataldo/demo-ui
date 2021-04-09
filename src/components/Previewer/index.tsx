@@ -3,22 +3,13 @@ import classnames from "classnames";
 
 import "./index.css";
 
-import { PropObject } from "../../prop-creators/types";
+import { PreviewerProps } from "../../types";
 
 import { takeScreenshot } from "../../logic";
 
 import Box from "../Box";
 
-interface Props {
-  label?: string;
-  borderContent?: JSX.Element;
-  customSettings?: Record<string, PropObject & { onChange: (value: any) => void }>;
-  children?: JSX.Element;
-  screenshot?: boolean;
-  className?: string;
-}
-
-const Previewer: React.FunctionComponent<Props> = ({
+const Previewer: React.FunctionComponent<PreviewerProps> = ({
   className,
   borderContent,
   label,

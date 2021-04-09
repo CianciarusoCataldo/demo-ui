@@ -8,7 +8,7 @@ import {
   SelectProp,
   StringProp,
   RangeProp,
-} from "./demo-ui";
+} from "./demo-ui-preview";
 
 const App = () => {
   return (

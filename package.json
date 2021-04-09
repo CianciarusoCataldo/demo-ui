@@ -46,6 +46,7 @@
     "check-types": "tsc",
     "start": "npm-run-all --parallel build-watch start-playground",
     "init": "npm i && cd playground && npm i",
-    "start-playground": "cd playground && npm run start"
+    "start-playground": "cd playground && npm run start",
+    "build-playground": "cd playground && npm run build"
   }
 }

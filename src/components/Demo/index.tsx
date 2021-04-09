@@ -2,26 +2,14 @@ import React from "react";
 
 import "./index.css";
 
-import { BaseCallback } from "../../logic/types";
-import { PropObject } from "../../prop-creators/types";
+import { DemoProps } from "../../types";
 
 import { formatValue, getProps, merge } from "../../logic";
 
 import Box from "../Box";
 import Previewer from "../Previewer";
 
-interface Props {
-  className?: string;
-  props?: Record<string, PropObject>;
-  label?: string;
-  renderFunction?: BaseCallback;
-  screenshot?: boolean;
-  settings?: { debug?: boolean; screenshot?: boolean };
-  rows?: string[][];
-  children?: JSX.Element;
-}
-
-const Demo: React.FunctionComponent<Props> = ({
+const Demo: React.FunctionComponent<DemoProps> = ({
   className = "",
   props: inputProps = {},
   label = "",

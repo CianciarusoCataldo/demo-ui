@@ -1,4 +1,4 @@
-import { PropObject, PropType } from "../prop-creators/types";
+import { PropObject, PropType } from "../types";
 import html2canvas from "html2canvas";
 
 const FORMATTERS: Record<PropType, (value: any) => any> = {
