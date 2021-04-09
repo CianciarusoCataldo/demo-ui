@@ -1,7 +1,7 @@
 /**
  * this is the main configuration file of your bit workspace.
  * for full documentation, please see: https://harmony-docs.bit.dev/workspace/configurations
- **/{
+ **/ {
   "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
   /**
    * main configuration of the Bit workspace.
@@ -22,42 +22,60 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "cianciarusocataldo.demo-ui"
-  },
-  /**
-   * main configuration for component dependency resolution.
-   **/
-  "teambit.dependencies/dependency-resolver": {
-    /**
-     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
-     */
-    "packageManager": "teambit.dependencies/pnpm",
-    "policy": {
-      "dependencies": {
-        "@cianciarusocataldo/demo-ui.previewer": "1.0.0"
-      },
-      "peerDependencies": {}
+    "defaultScope": "cianciarusocataldo.demo-ui",
+    "overrides": {
+      "*": {
+        "dependencies": {
+          "react": {
+            "version": "16.14.0",
+            "preserve": true
+          },
+          "react-dom": {
+            "version": "16.14.0",
+            "preserve": true
+          }
+        }
+      }
     },
-    "packageManagerArgs": [],
-    "devFilePatterns": [
-      "**/*.spec.ts"
-    ],
-    "strictPeerDependencies": false
-  },
-  /**
+    /**
+     * main configuration for component dependency resolution.
+     **/
+    "teambit.dependencies/dependency-resolver": {
+      /**
+       * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+       */
+      "packageManager": "teambit.dependencies/pnpm",
+      "policy": {
+        // "dependencies": {
+        //   "react": {
+        //     "version": "16.14.0",
+        //     "preserve": true
+        //   },
+        //   "react-dom": {
+        //     "version": "16.14.0",
+        //     "preserve": true
+        //   }
+        // },
+        "devDependencies": { "typescript": "4.2.3" }
+      },
+      "packageManagerArgs": [],
+      "strictPeerDependencies": true
+    }
+    /**
    * workspace variants allow to set different subsets of configuration for components in your workspace.
    * this is extremely useful for upgrading, aligning and building components with a
    * new set of dependencies.
-   **/
-  "teambit.workspace/variants": {
-    /**
-     * "*" is a special rule which applied on all components in the workspace.
-     **/
-    "*": {
-      /**
-       * uncomment to apply the react environment on all components.
-       **/
-      "teambit.react/react": {}
-    }
+  //  **/
+
+    // ,"teambit.workspace/variants": {
+    //   "*": {
+    //     "teambit.react/react": {
+    //       "version": "16.14.0"
+    //     },
+    //     "teambit.react/react-dom": {
+    //       "version": "16.14.0"
+    //     }
+    //   }
+    // }
   }
 }

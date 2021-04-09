@@ -2,25 +2,18 @@ import React from "react";
 
 import "./index.css";
 
-import { BaseCallback, PropObject } from "@bit/cianciarusocataldo.demo-ui.types";
+import { DemoProps } from "@bit/cianciarusocataldo.demo-ui.types";
 
-import { formatValue, getProps, merge } from "@bit/cianciarusocataldo.demo-ui.logic";
+import {
+  formatValue,
+  getProps,
+  merge,
+} from "@bit/cianciarusocataldo.demo-ui.logic";
 
 import Box from "@bit/cianciarusocataldo.demo-ui.box";
 import Previewer from "@bit/cianciarusocataldo.demo-ui.previewer";
 
-interface Props {
-  className?: string;
-  props?: Record<string, PropObject>;
-  label?: string;
-  renderFunction?: BaseCallback;
-  screenshot?: boolean;
-  settings?: { debug?: boolean; screenshot?: boolean };
-  rows?: string[][];
-  children?: JSX.Element;
-}
-
-const Demo: React.FunctionComponent<Props> = ({
+const Demo: React.FunctionComponent<DemoProps> = ({
   className = "",
   props: inputProps = {},
   label = "",

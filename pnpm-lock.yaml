@@ -2,15 +2,12 @@ importers:
   .:
     dependencies:
       '@bit/cianciarusocataldo.demo-ui.box': link:src/components/Box
+      '@bit/cianciarusocataldo.demo-ui.demo': link:src/components/Demo
       '@bit/cianciarusocataldo.demo-ui.logic': link:src/logic
       '@bit/cianciarusocataldo.demo-ui.previewer': link:src/components/Previewer
       '@bit/cianciarusocataldo.demo-ui.types': link:src/types
-      '@cianciarusocataldo/demo-ui.box': 1.0.1_89a6eee6e3e40ca75ceb5ab81abac96d
-      '@cianciarusocataldo/demo-ui.previewer': link:src/components/Previewer
-      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/react-dom': registry.npmjs.org/@types/react-dom/16.9.12
       classnames: registry.npmjs.org/classnames/2.3.1
-      core-js: registry.npmjs.org/core-js/3.8.3
       html2canvas: registry.npmjs.org/html2canvas/1.0.0-rc.7
       npm-run-all: registry.npmjs.org/npm-run-all/4.1.5
       react: registry.npmjs.org/react/16.14.0
@@ -20,41 +17,34 @@ importers:
       rollup-plugin-delete: registry.npmjs.org/rollup-plugin-delete/2.0.0
       rollup-plugin-postcss: registry.npmjs.org/rollup-plugin-postcss/4.0.0
       rollup-plugin-terser: registry.npmjs.org/rollup-plugin-terser/7.0.2_rollup@2.44.0
-      rollup-plugin-typescript2: registry.npmjs.org/rollup-plugin-typescript2/0.30.0_rollup@2.44.0+typescript@4.2.3
-      typescript: registry.npmjs.org/typescript/4.2.3
+      rollup-plugin-typescript2: registry.npmjs.org/rollup-plugin-typescript2/0.30.0_rollup@2.44.0+typescript@4.2.4
+      typescript: registry.npmjs.org/typescript/4.2.4
     devDependencies:
-      '@babel/runtime': registry.npmjs.org/@babel/runtime/7.12.18
+      '@types/classnames': registry.npmjs.org/@types/classnames/2.2.11
       '@types/jest': registry.npmjs.org/@types/jest/26.0.20
-      '@types/node': registry.npmjs.org/@types/node/12.20.4
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-router-dom': registry.npmjs.org/@types/react-router-dom/5.1.7
+      '@types/react': registry.npmjs.org/@types/react/16.14.5
     specifiers:
-      '@babel/runtime': 7.12.18
-      '@bit/cianciarusocataldo.demo-ui.box': workspace:npm:@cianciarusocataldo/demo-ui.box@^1.0.3
+      '@bit/cianciarusocataldo.demo-ui.box': workspace:npm:@cianciarusocataldo/demo-ui.box@^2.0.0
+      '@bit/cianciarusocataldo.demo-ui.demo': workspace:npm:@cianciarusocataldo/demo-ui.demo@^1.1.1
       '@bit/cianciarusocataldo.demo-ui.logic': workspace:npm:@cianciarusocataldo/demo-ui.logic@^1.0.1
-      '@bit/cianciarusocataldo.demo-ui.previewer': workspace:npm:@cianciarusocataldo/demo-ui.previewer@^1.0.0
-      '@bit/cianciarusocataldo.demo-ui.types': workspace:npm:@cianciarusocataldo/demo-ui.types@^1.0.0
-      '@cianciarusocataldo/demo-ui.box': 1.0.1
-      '@cianciarusocataldo/demo-ui.previewer': workspace:1.0.0
+      '@bit/cianciarusocataldo.demo-ui.previewer': workspace:npm:@cianciarusocataldo/demo-ui.previewer@^1.1.1
+      '@bit/cianciarusocataldo.demo-ui.types': workspace:npm:@cianciarusocataldo/demo-ui.types@^2.0.1
       '@types/classnames': ^2.2.11
       '@types/jest': 26.0.20
-      '@types/node': 12.20.4
-      '@types/react': 16.9.43
+      '@types/react': ^16.14.5
       '@types/react-dom': ^16.9.12
-      '@types/react-router-dom': 5.1.7
       classnames: ^2.3.1
-      core-js: 3.8.3
       html2canvas: '*'
       npm-run-all: ^4.1.5
-      react: ^16.14.0
-      react-dom: ^16.14.0
+      react: 16.14.0
+      react-dom: 16.14.0
       rollup: ^2.44.0
       rollup-plugin-analyzer: ^4.0.0
       rollup-plugin-delete: ^2.0.0
       rollup-plugin-postcss: ^4.0.0
       rollup-plugin-terser: ^7.0.2
       rollup-plugin-typescript2: ^0.30.0
-      typescript: ^4.2.3
+      typescript: ^4.2.4
   src/components/Box:
     specifiers: {}
   src/components/Demo:
@@ -69,33 +59,6 @@ importers:
     specifiers: {}
 lockfileVersion: 5.2
 packages:
-  /@cianciarusocataldo/demo-ui.box/1.0.1_89a6eee6e3e40ca75ceb5ab81abac96d:
-    dependencies:
-      '@bit/cianciarusocataldo.demo-ui.types': /@cianciarusocataldo/demo-ui.types/1.0.0_react-dom@16.14.0+react@16.14.0
-      classnames: registry.npmjs.org/classnames/2.3.1
-      core-js: registry.npmjs.org/core-js/3.8.3
-      react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-    dev: false
-    peerDependencies:
-      classnames: ^2.2.6
-      react: 16.13.1
-      react-dom: 16.13.1
-    resolution:
-      integrity: sha1-v5hQmshZa4SOoK+FByBt1BJFLss=
-      tarball: '@cianciarusocataldo/demo-ui.box/-/@cianciarusocataldo-demo-ui.box-1.0.1.tgz'
-  /@cianciarusocataldo/demo-ui.types/1.0.0_react-dom@16.14.0+react@16.14.0:
-    dependencies:
-      core-js: registry.npmjs.org/core-js/3.8.3
-      react: registry.npmjs.org/react/16.14.0
-      react-dom: registry.npmjs.org/react-dom/16.14.0_react@16.14.0
-    dev: false
-    peerDependencies:
-      react: 16.13.1
-      react-dom: 16.13.1
-    resolution:
-      integrity: sha1-FLmz1oLIBFGQVxZbKinJRIo5EcQ=
-      tarball: '@bit/cianciarusocataldo.demo-ui.types/-/@bit-cianciarusocataldo.demo-ui.types-1.0.0.tgz'
   registry.npmjs.org/@babel/code-frame/7.12.13:
     dependencies:
       '@babel/highlight': registry.npmjs.org/@babel/highlight/7.13.10
@@ -126,21 +89,11 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@babel/highlight/-/highlight-7.13.10.tgz
     version: 7.13.10
-  registry.npmjs.org/@babel/runtime/7.12.18:
-    dependencies:
-      regenerator-runtime: registry.npmjs.org/regenerator-runtime/0.13.7
-    dev: true
-    name: '@babel/runtime'
-    resolution:
-      integrity: sha512-BogPQ7ciE6SYAUPtlm9tWbgI9+2AgqSam6QivMgXgAT+fKbgppaj4ZX15MHeLC1PVF5sNk70huBu20XxWOs8Cg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@babel/runtime/-/runtime-7.12.18.tgz
-    version: 7.12.18
   registry.npmjs.org/@jest/types/26.6.2:
     dependencies:
       '@types/istanbul-lib-coverage': registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3
       '@types/istanbul-reports': registry.npmjs.org/@types/istanbul-reports/3.0.0
-      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/node': registry.npmjs.org/@types/node/14.14.37
       '@types/yargs': registry.npmjs.org/@types/yargs/15.0.13
       chalk: registry.npmjs.org/chalk/4.1.0
     dev: true
@@ -206,7 +159,7 @@ packages:
       tarball: https://registry.npmjs.org/@rollup/pluginutils/-/pluginutils-4.1.0.tgz
     version: 4.1.0
   registry.npmjs.org/@types/classnames/2.2.11:
-    dev: false
+    dev: true
     name: '@types/classnames'
     resolution:
       integrity: sha512-2koNhpWm3DgWRp5tpkiJ8JGc1xTn2q0l+jUNUE7oMKXUf5NpI9AIdC4kbjGNFBdHtcxBD18LAksoudAVhFKCjw==
@@ -216,7 +169,7 @@ packages:
   registry.npmjs.org/@types/glob/7.1.3:
     dependencies:
       '@types/minimatch': registry.npmjs.org/@types/minimatch/3.0.4
-      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/node': registry.npmjs.org/@types/node/14.14.37
     dev: false
     name: '@types/glob'
     resolution:
@@ -224,14 +177,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/glob/-/glob-7.1.3.tgz
     version: 7.1.3
-  registry.npmjs.org/@types/history/4.7.8:
-    dev: true
-    name: '@types/history'
-    resolution:
-      integrity: sha512-S78QIYirQcUoo6UJZx9CSP0O2ix9IaeAXwQi26Rhr/+mg7qqPy8TzaxHSUut7eGjL8WmLccT7/MXf304WjqHcA==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/history/-/history-4.7.8.tgz
-    version: 4.7.8
   registry.npmjs.org/@types/istanbul-lib-coverage/2.0.3:
     dev: true
     name: '@types/istanbul-lib-coverage'
@@ -279,13 +224,13 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/minimatch/-/minimatch-3.0.4.tgz
     version: 3.0.4
-  registry.npmjs.org/@types/node/12.20.4:
+  registry.npmjs.org/@types/node/14.14.37:
     name: '@types/node'
     resolution:
-      integrity: sha512-xRCgeE0Q4pT5UZ189TJ3SpYuX/QGl6QIAOAIeDSbAVAd2gX1NxSZup4jNVK7cxIeP8KDSbJgcckun495isP1jQ==
+      integrity: sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/node/-/node-12.20.4.tgz
-    version: 12.20.4
+      tarball: https://registry.npmjs.org/@types/node/-/node-14.14.37.tgz
+    version: 14.14.37
   registry.npmjs.org/@types/parse-json/4.0.0:
     dev: false
     name: '@types/parse-json'
@@ -311,7 +256,7 @@ packages:
     version: 1.5.4
   registry.npmjs.org/@types/react-dom/16.9.12:
     dependencies:
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
+      '@types/react': registry.npmjs.org/@types/react/16.14.5
     dev: false
     name: '@types/react-dom'
     resolution:
@@ -319,39 +264,24 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-16.9.12.tgz
     version: 16.9.12
-  registry.npmjs.org/@types/react-router-dom/5.1.7:
-    dependencies:
-      '@types/history': registry.npmjs.org/@types/history/4.7.8
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-      '@types/react-router': registry.npmjs.org/@types/react-router/5.1.13
-    dev: true
-    name: '@types/react-router-dom'
-    resolution:
-      integrity: sha512-D5mHD6TbdV/DNHYsnwBTv+y73ei+mMjrkGrla86HthE4/PVvL1J94Bu3qABU+COXzpL23T1EZapVVpwHuBXiUg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-router-dom/-/react-router-dom-5.1.7.tgz
-    version: 5.1.7
-  registry.npmjs.org/@types/react-router/5.1.13:
-    dependencies:
-      '@types/history': registry.npmjs.org/@types/history/4.7.8
-      '@types/react': registry.npmjs.org/@types/react/16.9.43
-    dev: true
-    name: '@types/react-router'
-    resolution:
-      integrity: sha512-ZIuaO9Yrln54X6elg8q2Ivp6iK6p4syPsefEYAhRDAoqNh48C8VYUmB9RkXjKSQAJSJV0mbIFCX7I4vZDcHrjg==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react-router/-/react-router-5.1.13.tgz
-    version: 5.1.13
-  registry.npmjs.org/@types/react/16.9.43:
+  registry.npmjs.org/@types/react/16.14.5:
     dependencies:
       '@types/prop-types': registry.npmjs.org/@types/prop-types/15.7.3
-      csstype: registry.npmjs.org/csstype/2.6.16
+      '@types/scheduler': registry.npmjs.org/@types/scheduler/0.16.1
+      csstype: registry.npmjs.org/csstype/3.0.7
     name: '@types/react'
     resolution:
-      integrity: sha512-PxshAFcnJqIWYpJbLPriClH53Z2WlJcVZE+NP2etUtWQs2s7yIMj3/LDKZT/5CHJ/F62iyjVCDu2H3jHEXIxSg==
+      integrity: sha512-YRRv9DNZhaVTVRh9Wmmit7Y0UFhEVqXqCSw3uazRWMxa2x85hWQZ5BN24i7GXZbaclaLXEcodEeIHsjBA8eAMw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/@types/react/-/react-16.9.43.tgz
-    version: 16.9.43
+      tarball: https://registry.npmjs.org/@types/react/-/react-16.14.5.tgz
+    version: 16.14.5
+  registry.npmjs.org/@types/scheduler/0.16.1:
+    name: '@types/scheduler'
+    resolution:
+      integrity: sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+      registry: https://node.bit.dev/
+      tarball: https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.1.tgz
+    version: 0.16.1
   registry.npmjs.org/@types/yargs-parser/20.2.0:
     dev: true
     name: '@types/yargs-parser'
@@ -503,9 +433,9 @@ packages:
     version: 3.0.2
   registry.npmjs.org/browserslist/4.16.3:
     dependencies:
-      caniuse-lite: registry.npmjs.org/caniuse-lite/1.0.30001207
+      caniuse-lite: registry.npmjs.org/caniuse-lite/1.0.30001208
       colorette: registry.npmjs.org/colorette/1.2.2
-      electron-to-chromium: registry.npmjs.org/electron-to-chromium/1.3.709
+      electron-to-chromium: registry.npmjs.org/electron-to-chromium/1.3.711
       escalade: registry.npmjs.org/escalade/3.1.1
       node-releases: registry.npmjs.org/node-releases/1.1.71
     dev: false
@@ -584,7 +514,7 @@ packages:
   registry.npmjs.org/caniuse-api/3.0.0:
     dependencies:
       browserslist: registry.npmjs.org/browserslist/4.16.3
-      caniuse-lite: registry.npmjs.org/caniuse-lite/1.0.30001207
+      caniuse-lite: registry.npmjs.org/caniuse-lite/1.0.30001208
       lodash.memoize: registry.npmjs.org/lodash.memoize/4.1.2
       lodash.uniq: registry.npmjs.org/lodash.uniq/4.5.0
     dev: false
@@ -594,14 +524,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/caniuse-api/-/caniuse-api-3.0.0.tgz
     version: 3.0.0
-  registry.npmjs.org/caniuse-lite/1.0.30001207:
+  registry.npmjs.org/caniuse-lite/1.0.30001208:
     dev: false
     name: caniuse-lite
     resolution:
-      integrity: sha512-UPQZdmAsyp2qfCTiMU/zqGSWOYaY9F9LL61V8f+8MrubsaDGpaHD9HRV/EWZGULZn0Hxu48SKzI5DgFwTvHuYw==
+      integrity: sha512-OE5UE4+nBOro8Dyvv0lfx+SRtfVIOM9uhKqFmJeUbGriqhhStgp1A0OyBpgy3OUF8AhYCT+PVwPC1gMl2ZcQMA==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001207.tgz
-    version: 1.0.30001207
+      tarball: https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001208.tgz
+    version: 1.0.30001208
   registry.npmjs.org/chalk/2.4.2:
     dependencies:
       ansi-styles: registry.npmjs.org/ansi-styles/3.2.1
@@ -760,15 +690,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/concat-with-sourcemaps/-/concat-with-sourcemaps-1.1.0.tgz
     version: 1.1.0
-  registry.npmjs.org/core-js/3.8.3:
-    dev: false
-    name: core-js
-    requiresBuild: true
-    resolution:
-      integrity: sha512-KPYXeVZYemC2TkNEkX/01I+7yd+nX3KddKwZ1Ww7SKWdI2wQprSgLmrTddT8nw92AjEklTsPBoSdQBhbI1bQ6Q==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/core-js/-/core-js-3.8.3.tgz
-    version: 3.8.3
   registry.npmjs.org/cosmiconfig/5.2.1:
     dependencies:
       import-fresh: registry.npmjs.org/import-fresh/2.0.0
@@ -1025,13 +946,13 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/csso/-/csso-4.2.0.tgz
     version: 4.2.0
-  registry.npmjs.org/csstype/2.6.16:
+  registry.npmjs.org/csstype/3.0.7:
     name: csstype
     resolution:
-      integrity: sha512-61FBWoDHp/gRtsoDkq/B1nWrCUG/ok1E3tUrcNbZjsE9Cxd9yzUirjS3+nAATB8U4cTtaQmAHbNndoFz5L6C9Q==
+      integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/csstype/-/csstype-2.6.16.tgz
-    version: 2.6.16
+      tarball: https://registry.npmjs.org/csstype/-/csstype-3.0.7.tgz
+    version: 3.0.7
   registry.npmjs.org/define-properties/1.1.3:
     dependencies:
       object-keys: registry.npmjs.org/object-keys/1.1.1
@@ -1135,14 +1056,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/dot-prop/-/dot-prop-5.3.0.tgz
     version: 5.3.0
-  registry.npmjs.org/electron-to-chromium/1.3.709:
+  registry.npmjs.org/electron-to-chromium/1.3.711:
     dev: false
     name: electron-to-chromium
     resolution:
-      integrity: sha512-LolItk2/ikSGQ7SN8UkuKVNMBZp3RG7Itgaxj1npsHRzQobj9JjMneZOZfLhtwlYBe5fCJ75k+cVCiDFUs23oA==
+      integrity: sha512-XbklBVCDiUeho0PZQCjC25Ha6uBwqqJeyDhPLwLwfWRAo4x+FZFsmu1pPPkXT+B4MQMQoQULfyaMltDopfeiHQ==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.709.tgz
-    version: 1.3.709
+      tarball: https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.3.711.tgz
+    version: 1.3.711
   registry.npmjs.org/emojis-list/3.0.0:
     dev: false
     engines:
@@ -1509,14 +1430,14 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/hex-color-regex/-/hex-color-regex-1.1.0.tgz
     version: 1.1.0
-  registry.npmjs.org/hosted-git-info/2.8.8:
+  registry.npmjs.org/hosted-git-info/2.8.9:
     dev: false
     name: hosted-git-info
     resolution:
-      integrity: sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
+      integrity: sha512-mxIDAb9Lsm6DoOJ7xH+5+X4y1LU/4Hi50L9C5sIswK3JzULS4bwk1FvjdBgvYR4bzT4tuUQiC15FE2f5HbLvYw==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.8.8.tgz
-    version: 2.8.8
+      tarball: https://registry.npmjs.org/hosted-git-info/-/hosted-git-info-2.8.9.tgz
+    version: 2.8.9
   registry.npmjs.org/hsl-regex/1.0.0:
     dev: false
     name: hsl-regex
@@ -1923,7 +1844,7 @@ packages:
     version: 26.3.0
   registry.npmjs.org/jest-worker/26.6.2:
     dependencies:
-      '@types/node': registry.npmjs.org/@types/node/12.20.4
+      '@types/node': registry.npmjs.org/@types/node/14.14.37
       merge-stream: registry.npmjs.org/merge-stream/2.0.0
       supports-color: registry.npmjs.org/supports-color/7.2.0
     dev: false
@@ -2192,7 +2113,7 @@ packages:
     version: 1.1.71
   registry.npmjs.org/normalize-package-data/2.5.0:
     dependencies:
-      hosted-git-info: registry.npmjs.org/hosted-git-info/2.8.8
+      hosted-git-info: registry.npmjs.org/hosted-git-info/2.8.9
       resolve: registry.npmjs.org/resolve/1.20.0
       semver: registry.npmjs.org/semver/5.7.1
       validate-npm-package-license: registry.npmjs.org/validate-npm-package-license/3.0.4
@@ -3213,14 +3134,6 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/read-pkg/-/read-pkg-3.0.0.tgz
     version: 3.0.0
-  registry.npmjs.org/regenerator-runtime/0.13.7:
-    dev: true
-    name: regenerator-runtime
-    resolution:
-      integrity: sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
-      registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz
-    version: 0.13.7
   registry.npmjs.org/resolve-from/3.0.0:
     dev: false
     engines:
@@ -3365,7 +3278,7 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz
     version: 7.0.2
-  registry.npmjs.org/rollup-plugin-typescript2/0.30.0_rollup@2.44.0+typescript@4.2.3:
+  registry.npmjs.org/rollup-plugin-typescript2/0.30.0_rollup@2.44.0+typescript@4.2.4:
     dependencies:
       '@rollup/pluginutils': registry.npmjs.org/@rollup/pluginutils/4.1.0_rollup@2.44.0
       find-cache-dir: registry.npmjs.org/find-cache-dir/3.3.1
@@ -3373,7 +3286,7 @@ packages:
       resolve: registry.npmjs.org/resolve/1.20.0
       rollup: registry.npmjs.org/rollup/2.44.0
       tslib: registry.npmjs.org/tslib/2.1.0
-      typescript: registry.npmjs.org/typescript/4.2.3
+      typescript: registry.npmjs.org/typescript/4.2.4
     dev: false
     id: registry.npmjs.org/rollup-plugin-typescript2/0.30.0
     name: rollup-plugin-typescript2
@@ -3795,17 +3708,17 @@ packages:
       registry: https://node.bit.dev/
       tarball: https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz
     version: 2.1.0
-  registry.npmjs.org/typescript/4.2.3:
+  registry.npmjs.org/typescript/4.2.4:
     dev: false
     engines:
       node: '>=4.2.0'
     hasBin: true
     name: typescript
     resolution:
-      integrity: sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
+      integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
       registry: https://node.bit.dev/
-      tarball: https://registry.npmjs.org/typescript/-/typescript-4.2.3.tgz
-    version: 4.2.3
+      tarball: https://registry.npmjs.org/typescript/-/typescript-4.2.4.tgz
+    version: 4.2.4
   registry.npmjs.org/unbox-primitive/1.0.1:
     dependencies:
       function-bind: registry.npmjs.org/function-bind/1.1.1

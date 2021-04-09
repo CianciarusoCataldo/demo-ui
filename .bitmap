@@ -3,39 +3,39 @@
 {
     "box": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.3",
+        "version": "2.0.0",
         "mainFile": "index.tsx",
         "rootDir": "src/components/Box"
     },
     "demo": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.0",
+        "version": "1.1.1",
         "mainFile": "index.tsx",
         "rootDir": "src/components/Demo"
     },
     "logic": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.2",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/logic"
     },
     "previewer": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.1",
+        "version": "1.1.1",
         "mainFile": "index.tsx",
         "rootDir": "src/components/Previewer"
     },
     "prop-creators": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "mainFile": "index.ts",
         "rootDir": "src/prop-creators"
     },
     "types": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.0.0",
+        "version": "2.0.1",
         "mainFile": "index.d.ts",
         "rootDir": "src/types"
     },
-    "version": "1.0.49"
+    "version": "1.0.50"
 }
