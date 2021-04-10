@@ -1,9 +1,12 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "demo",
     "ui",
