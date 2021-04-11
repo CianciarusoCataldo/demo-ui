@@ -16,10 +16,11 @@
   border-radius: 5px;
 }
 
-.previewer-container p {
+.previewer-label {
   color: #ffffff;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-top: 0.5rem;
 }
 
 .preview-screen {
