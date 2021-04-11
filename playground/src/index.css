@@ -14,7 +14,6 @@ code {
 }
 
 .playground {
-  text-align: center;
   margin-bottom: 3rem;
 }
 
@@ -57,6 +56,7 @@ code {
   margin-top: 3rem;
   margin-bottom: 1rem;
   font-size: xx-large;
+  text-align: center;
 }
 
 
