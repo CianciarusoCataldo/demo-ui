@@ -5,6 +5,7 @@ importers:
       '@bit/cianciarusocataldo.demo-ui.demo': link:src/components/Demo
       '@bit/cianciarusocataldo.demo-ui.logic': link:src/logic
       '@bit/cianciarusocataldo.demo-ui.previewer': link:src/components/Previewer
+      '@bit/cianciarusocataldo.demo-ui.prop-creators': link:src/prop-creators
       '@bit/cianciarusocataldo.demo-ui.types': link:src/types
       classnames: registry.npmjs.org/classnames/2.3.1
       html2canvas: registry.npmjs.org/html2canvas/1.0.0-rc.7
@@ -26,6 +27,7 @@ importers:
       '@bit/cianciarusocataldo.demo-ui.demo': workspace:npm:@cianciarusocataldo/demo-ui.demo@^1.1.1
       '@bit/cianciarusocataldo.demo-ui.logic': workspace:npm:@cianciarusocataldo/demo-ui.logic@^1.0.1
       '@bit/cianciarusocataldo.demo-ui.previewer': workspace:npm:@cianciarusocataldo/demo-ui.previewer@^1.1.1
+      '@bit/cianciarusocataldo.demo-ui.prop-creators': workspace:npm:@cianciarusocataldo/demo-ui.prop-creators@^1.0.1
       '@bit/cianciarusocataldo.demo-ui.types': workspace:npm:@cianciarusocataldo/demo-ui.types@^2.0.1
       '@types/classnames': ^2.2.11
       '@types/jest': 26.0.20
