@@ -3,7 +3,7 @@
 {
     "box": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "2.0.0",
+        "version": "2.1.0",
         "mainFile": "index.tsx",
         "rootDir": "src/components/Box"
     },
@@ -21,7 +21,7 @@
     },
     "previewer": {
         "scope": "cianciarusocataldo.demo-ui",
-        "version": "1.1.1",
+        "version": "2.1.0",
         "mainFile": "index.tsx",
         "rootDir": "src/components/Previewer"
     },
