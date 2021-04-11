@@ -19,7 +19,7 @@ const App = () => {
       <div>
         <p className="component-label">Previewer</p>
         <Previewer label="This is a Previewer component">
-          <label>Children</label>
+          <p className="component-label">Children</p>
         </Previewer>
       </div>
       <div>
