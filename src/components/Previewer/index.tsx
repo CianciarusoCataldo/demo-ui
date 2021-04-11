@@ -23,7 +23,7 @@ const Previewer: React.FunctionComponent<PreviewerProps> = ({
   return (
     <div className={classnames("previewer-container my-1 mx-1", className)}>
       <div>
-        <p>{label}</p>
+        <p className="previewer-label">{label}</p>
         <div
           className="preview my-1 mx-1"
           id="preview"
