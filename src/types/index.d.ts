@@ -1,57 +1,59 @@
-/* Prop-creators types */
+/** Demo Component's props types */
+export type PropType =
+  | "text"
+  | "checkbox"
+  | "select"
+  | "range"
+  | "number"
+  | "color";
 
-export type PropType = "text" | "checkbox" | "select" | "range" | "number";
-
+/** Demo Component's Prop */
 export interface PropObject<T = any> {
   type?: PropType;
   value?: T;
   values?: Record<string, T>;
-  callBack?: BaseCallback;
+  callBack?: BaseCallback<void>;
   hide?: boolean;
   min?: number;
   max?: number;
 }
 
-/* Logic types */
-
-export type BaseCallback = (
+/** Standard Prop calback function */
+export type BaseCallback<T = JSX.Element> = (
   props: Record<string, any>,
   setProps: (newProps: Record<string, any>) => void
-) => JSX.Element;
+) => T;
 
-/* Box component props */
-
-export type BoxProps = PropObject & {
-  className?: string;
-  label?: string;
-  onChange?: (value: any) => void;
+/** Common attributes for UI components */
+interface UiCommonProps {
   id?: string;
-  children?: JSX.Element;
-};
-
-/* Previewer types */
-
-export interface PreviewerProps {
-  label?: string;
-  borderContent?: JSX.Element;
-  customSettings?: Record<
-    string,
-    PropObject & { onChange: (value: any) => void }
-  >;
-  children?: JSX.Element;
-  screenshot?: boolean;
   className?: string;
+  label?: string;
 }
 
-/* Demo component types */
+/** Box component props */
+export type BoxProps = PropObject &
+  UiCommonProps & {
+    onChange?: (value: any) => void;
+  };
 
-export interface DemoProps {
-  className?: string;
-  props?: Record<string, PropObject>;
-  label?: string;
-  renderFunction?: BaseCallback;
+interface PreviewerInternalProps {
   screenshot?: boolean;
-  settings?: { debug?: boolean; screenshot?: boolean };
-  rows?: string[][];
-  children?: JSX.Element;
+  header?: string;
 }
+
+/** Previewer props */
+export type PreviewerProps = UiCommonProps &
+  PreviewerInternalProps & {
+    borderContent?: JSX.Element;
+    children?: JSX.Element;
+  };
+
+/** Demo component props */
+export type DemoProps = UiCommonProps &
+  PreviewerInternalProps & {
+    props?: Record<string, PropObject>;
+    debug?: boolean;
+    rows?: string[][];
+    children?: JSX.Element | BaseCallback;
+  };

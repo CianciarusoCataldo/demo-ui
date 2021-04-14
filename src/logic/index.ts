@@ -8,6 +8,7 @@ const FORMATTERS: Record<PropType, (value: any) => any> = {
   number: (value: number) => value,
   range: (value: number) => value,
   select: (value: any) => value,
+  color: (value: any) => String(value),
 };
 
 export const formatValue = (value: any, type: PropType) =>

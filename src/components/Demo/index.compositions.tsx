@@ -14,7 +14,9 @@ import DemoComponent from ".";
 
 export const AdvancedExample = () => (
   <DemoComponent
-    settings={{ debug: true, screenshot: true }}
+    debug
+    screenshot
+    header="Header"
     label="This is a Demo component"
     props={{
       "Box type": SelectProp({
@@ -33,7 +35,8 @@ export const AdvancedExample = () => (
         "this is an hidden prop, you shouldn't see any box for it"
       ),
     }}
-    renderFunction={(props, setProps) => {
+  >
+    {(props, setProps) => {
       const BOXES = {
         select: (
           <Box
@@ -95,5 +98,5 @@ export const AdvancedExample = () => (
         </div>
       );
     }}
-  />
+  </DemoComponent>
 );

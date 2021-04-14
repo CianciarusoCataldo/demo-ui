@@ -6,11 +6,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #c4c8cf;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 1rem;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 10px;
 }
 
 .playground {
@@ -20,11 +39,15 @@ code {
 .playground-header {
   background-color: #282c34;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.playground-header a {
+  margin-left: 5px;
 }
 
 .demo-boxes {
@@ -43,15 +66,6 @@ code {
   flex-direction: column;
 }
 
-@media (max-width: 900px) {
-  .demo-boxes {
-    flex-direction: column;
-  }
-  .demo-box {
-    margin-top: 1.5rem;
-  }
-}
-
 .component-label {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -59,4 +73,24 @@ code {
   text-align: center;
 }
 
+@media (max-width: 990px) {
+  .playground-header {
+    flex-direction: column-reverse;
+    font-size: xx-large;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons {
+    position: relative;
 
+  }
+}
+
+@media (max-width: 1120px) {
+  .demo-boxes {
+    flex-direction: column;
+  }
+  .demo-box {
+    margin-top: 1.5rem;
+  }
+}

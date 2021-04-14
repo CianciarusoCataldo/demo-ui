@@ -1,6 +1,6 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "2.3.0",
+  "version": "3.0.0",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -51,11 +51,11 @@
     "build-playground": "cd playground && npm run build"
   },
   "dependencies": {
-    "@bit/cianciarusocataldo.demo-ui.box": "npm:@bit/cianciarusocataldo.demo-ui.box@^2.1.0",
+    "@bit/cianciarusocataldo.demo-ui.box": "npm:@bit/cianciarusocataldo.demo-ui.box@^3.0.0",
     "@bit/cianciarusocataldo.demo-ui.demo": "npm:@bit/cianciarusocataldo.demo-ui.demo@^1.1.1",
-    "@bit/cianciarusocataldo.demo-ui.logic": "npm:@bit/cianciarusocataldo.demo-ui.logic@^1.0.1",
-    "@bit/cianciarusocataldo.demo-ui.previewer": "npm:@bit/cianciarusocataldo.demo-ui.previewer@^2.1.0",
-    "@bit/cianciarusocataldo.demo-ui.prop-creators": "npm:@cianciarusocataldo/demo-ui.prop-creators@^1.0.1",
-    "@bit/cianciarusocataldo.demo-ui.types": "npm:@bit/cianciarusocataldo.demo-ui.types@^2.0.1"
+    "@bit/cianciarusocataldo.demo-ui.logic": "npm:@bit/cianciarusocataldo.demo-ui.logic@^3.0.0",
+    "@bit/cianciarusocataldo.demo-ui.previewer": "npm:@bit/cianciarusocataldo.demo-ui.previewer@^3.0.0",
+    "@bit/cianciarusocataldo.demo-ui.prop-creators": "npm:@bit/cianciarusocataldo.demo-ui.prop-creators@^3.0.0",
+    "@bit/cianciarusocataldo.demo-ui.types": "npm:@bit/cianciarusocataldo.demo-ui.types@^3.0.0"
   }
 }

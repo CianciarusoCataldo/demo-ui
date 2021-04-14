@@ -13,35 +13,21 @@ import {
 import Box from "@bit/cianciarusocataldo.demo-ui.box";
 import Previewer from "@bit/cianciarusocataldo.demo-ui.previewer";
 
-const Demo: React.FunctionComponent<DemoProps> = ({
-  className = "",
+const Demo = ({
   props: inputProps = {},
-  label = "",
-  renderFunction = (_, __) => <div />,
   rows,
   children,
-  settings = {},
-}) => {
+  debug,
+  ...previewerProps
+}:DemoProps) => {
   const [props, setProps] = React.useState<Record<string, any>>(
     getProps(inputProps)
   );
-  const [showProps, setPropsVisible] = React.useState(false);
   let boxRows = rows ? rows : [Object.keys(inputProps)];
 
   return (
     <Previewer
-      className={className}
-      label={label}
-      screenshot={settings.screenshot}
-      customSettings={
-        settings.debug && {
-          "Show props": {
-            type: "checkbox",
-            value: showProps,
-            onChange: () => setPropsVisible(!showProps),
-          },
-        }
-      }
+      {...previewerProps}
       borderContent={
         <div key="demo_rows">
           {boxRows.map((row, index) => (
@@ -73,14 +59,13 @@ const Demo: React.FunctionComponent<DemoProps> = ({
       }
     >
       <div className="demo-container" key="demo_container">
-        <div key="demo_render_function">
-          {renderFunction(props, (newProps) =>
-            setProps(merge(props, newProps))
-          )}
+        <div key="demo_children">
+          {typeof children === "function"
+            ? children(props, (newProps) => setProps(merge(props, newProps)))
+            : children}
         </div>
-        <div key="demo_children">{children}</div>
-        {settings.debug && showProps && (
-          <div key="props-container" className="props-container">
+        {debug && (
+          <div key="props-debug" className="props-container">
             {"{"}
             {Object.keys(props).map((prop) => (
               <div className="prop" key={prop}>

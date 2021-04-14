@@ -9,30 +9,24 @@ const Box: React.FunctionComponent<BoxProps> = ({
   className,
   label = "",
   children,
-  type = "text",
   callBack,
-  value,
   values = {},
   hide = false,
-  min,
-  max,
   id,
   onChange = () => {},
+  ...inputProps
 }) => {
   const [selectedValue, setValue] = React.useState("");
-
+  const boxClassname = classnames("box", inputProps.type)
   return (
-    <div
-      className={classnames("box-container", className, { hidden: hide })}
-      key={id || label}
-    >
-      <div key="demo_label" className="demo-label">
-        <label>{label}</label>
-      </div>
-      <div key="demo_box_element">
-        {type === "select" ? (
+    <div className={classnames(className, { hidden: hide })}>
+      <div className="box-container" key={id || label}>
+        <div key="demo_label" className="demo-label">
+          <label>{label}</label>
+        </div>
+        {inputProps.type === "select" ? (
           <select
-            className={classnames("box", type)}
+            className={boxClassname}
             value={selectedValue}
             onChange={(e) => {
               onChange(values[e.target.value]);
@@ -47,13 +41,10 @@ const Box: React.FunctionComponent<BoxProps> = ({
           </select>
         ) : (
           <input
-            checked={value}
-            className={classnames("box", type)}
-            type={type}
-            value={value}
+            {...inputProps}
+            checked={inputProps.value}
+            className={boxClassname}
             onChange={(e) => onChange(e.target.value)}
-            min={min}
-            max={max}
           />
         )}
       </div>
