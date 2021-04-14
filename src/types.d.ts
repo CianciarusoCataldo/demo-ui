@@ -37,18 +37,23 @@ export type BoxProps = PropObject &
     onChange?: (value: any) => void;
   };
 
-/** Previewer props */
-export type PreviewerProps = UiCommonProps & {
-  borderContent?: JSX.Element;
-  children?: JSX.Element;
+interface PreviewerInternalProps {
   screenshot?: boolean;
   header?: string;
-};
+}
+
+/** Previewer props */
+export type PreviewerProps = UiCommonProps &
+  PreviewerInternalProps & {
+    borderContent?: JSX.Element;
+    children?: JSX.Element;
+  };
 
 /** Demo component props */
-export type DemoProps = PreviewerProps & {
-  props?: Record<string, PropObject>;
-  debug?: boolean;
-  rows?: string[][];
-  children?: JSX.Element | BaseCallback;
-};
+export type DemoProps = UiCommonProps &
+  PreviewerInternalProps & {
+    props?: Record<string, PropObject>;
+    debug?: boolean;
+    rows?: string[][];
+    children?: JSX.Element | BaseCallback;
+  };
