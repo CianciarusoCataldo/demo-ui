@@ -1,5 +1,5 @@
-import { PropObject, PropType } from "../types";
 import html2canvas from "html2canvas";
+import { PropObject, PropType } from "../types";
 
 const FORMATTERS: Record<PropType, (value: any) => any> = {
   checkbox: (value: boolean): boolean => !(String(value) === "true"),
@@ -7,6 +7,7 @@ const FORMATTERS: Record<PropType, (value: any) => any> = {
   number: (value: number) => value,
   range: (value: number) => value,
   select: (value: any) => value,
+  color: (value: any) => String(value),
 };
 
 export const formatValue = (value: any, type: PropType) =>

@@ -1,12 +1,22 @@
-.demo-container {
+.demo-container,
+.props-container,
+.demo-row,
+.prop {
+  display: flex;
+}
+
+.demo-container,
+.props-container {
   flex-direction: column;
 }
 
+.prop,
 .demo-row {
-  display: flex;
   flex-direction: row;
+}
+
+.demo-row {
   justify-content: center;
-  flex-direction: row;
   color: white;
   padding-bottom: 1rem;
   margin-top: 1rem;
@@ -15,24 +25,20 @@
 
 .props-container {
   background-color: white;
-  display: flex;
-  flex-direction: column;
   text-align: left;
   margin-left: 0.6rem;
 }
 
-.prop > .value {
+.prop {
+  margin-bottom: 0.4rem;
+}
+
+.prop .value {
   color: #000;
   font-size: large;
 }
 
-.prop {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 0.4rem;
-}
-
-.prop > .name {
+.prop .name {
   color: darkslategray;
   font-size: large;
   margin-right: 0.3rem;

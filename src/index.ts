@@ -3,6 +3,7 @@ export { default as Box } from "./components/Box";
 export { default as Previewer } from "./components/Previewer";
 export {
   BooleanProp,
+  ColorProp,
   HiddenProp,
   NumberProp,
   SelectProp,

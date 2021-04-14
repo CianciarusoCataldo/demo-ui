@@ -18,36 +18,37 @@
 
 .box.range {
   -webkit-appearance: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #484263;
+  background: #484263;
+  border: 1px solid #484263;
   height: 15px;
-  border-radius: 5px;
   padding: 0;
   opacity: 0.9;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 }
 
-.box.range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  height: 25px;
+.box.range::-moz-range-thumb {
   border-radius: 50%;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   background: #fd6e31;
   border: 1px solid #ff4d00;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
 }
 
-.box.range::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  height: 25px;
+.box.range::-webkit-slider-thumb {
   border-radius: 50%;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
   background: #fd6e31;
   border: 1px solid #ff4d00;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
+  -webkit-appearance: none;
 }
 
 .box.select {
@@ -56,6 +57,7 @@
 }
 
 .box-container {
+  text-align: center;
   flex-direction: column;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -65,11 +67,11 @@
 
 .box.checkbox {
   border: 1px solid black;
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
 }
 
 .box.checkbox:checked {
-  -webkit-transition: all .2s;
-      transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }

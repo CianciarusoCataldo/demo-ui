@@ -7,7 +7,7 @@ export const Prop = (
   hide = false,
   min = 0,
   max = 100,
-  callback?: BaseCallback
+  callback?: BaseCallback<void>
 ): PropObject => ({
   type: type,
   value: value,
@@ -33,3 +33,6 @@ export const BooleanProp = (value: boolean): PropObject =>
 
 export const RangeProp = (value = 0, min = 0, max = 100): PropObject =>
   Prop("range", value, null, false, min, max);
+
+export const ColorProp = (value = "#ffffff"): PropObject =>
+  Prop("color", value);
