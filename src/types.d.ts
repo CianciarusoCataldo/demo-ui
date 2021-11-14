@@ -40,6 +40,7 @@ export type BoxProps = PropObject &
 interface PreviewerInternalProps {
   screenshot?: boolean;
   header?: string;
+  startColor?: string;
 }
 
 /** Previewer props */

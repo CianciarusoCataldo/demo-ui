@@ -10,9 +10,24 @@ const FORMATTERS: Record<PropType, (value: any) => any> = {
   color: (value: any) => String(value),
 };
 
+/**
+ * Format a valued based on the given type
+ *
+ * @param value a value to format
+ * @param type the prop's type
+ *
+ * @returns a formatted value for the prop
+ */
 export const formatValue = (value: any, type: PropType) =>
   FORMATTERS[type](value);
 
+/**
+ * 
+ * 
+ * @param base 
+ * @param toMerge 
+ * @returns 
+ */
 export const merge = (
   base: Record<string, any>,
   toMerge: Record<string, any>

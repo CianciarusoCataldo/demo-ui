@@ -1,6 +1,6 @@
 {
   "name": "@cianciarusocataldo/demo-ui",
-  "version": "3.0.0",
+  "version": "3.0.3",
   "description": "A tiny UI library designed for build interactive demos for every react app",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -35,7 +35,7 @@
   "peerDependencies": {
     "classnames": "^2.2.6",
     "html2canvas": "*",
-    "react": "^16.14.0"
+    "react": ">=16.x.0"
   },
   "scripts": {
     "build": "rollup -c ./config/rollup.build.config.js",

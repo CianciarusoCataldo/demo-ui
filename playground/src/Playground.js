@@ -64,6 +64,7 @@ const Playground = () => (
     <Demo
       header="Demo"
       debug
+      startColor="#555"
       screenshot
       label="This is a Demo component, you can use it to play with Box component"
       props={{

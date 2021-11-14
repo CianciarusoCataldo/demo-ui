@@ -13,9 +13,10 @@ const Previewer: React.FunctionComponent<PreviewerProps> = ({
   children,
   screenshot,
   header,
+  startColor = "#FFFFFF",
   id = String(Math.random()),
 }) => {
-  const [color, setColor] = React.useState("#FFFFFF");
+  const [color, setColor] = React.useState(startColor);
 
   return (
     <div className={className}>
